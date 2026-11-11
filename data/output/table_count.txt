@@ -1,0 +1,9 @@
+customers count: 99441
+geolocation count: 1000163
+orders count: 99441
+order_items count: 112650
+order_payments count: 103886
+order_reviews count: 99224
+products count: 32951
+sellers count: 3095
+product_category_name_translation count: 71

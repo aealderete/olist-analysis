@@ -1,0 +1,79 @@
+root
+ |-- customer_id: string (nullable = true)
+ |-- customer_unique_id: string (nullable = true)
+ |-- customer_zip_code_prefix: integer (nullable = true)
+ |-- customer_city: string (nullable = true)
+ |-- customer_state: string (nullable = true)
+
+customers schema: None
+root
+ |-- geolocation_zip_code_prefix: integer (nullable = true)
+ |-- geolocation_lat: double (nullable = true)
+ |-- geolocation_lng: double (nullable = true)
+ |-- geolocation_city: string (nullable = true)
+ |-- geolocation_state: string (nullable = true)
+
+geolocation schema: None
+root
+ |-- order_id: string (nullable = true)
+ |-- customer_id: string (nullable = true)
+ |-- order_status: string (nullable = true)
+ |-- order_purchase_timestamp: timestamp (nullable = true)
+ |-- order_approved_at: timestamp (nullable = true)
+ |-- order_delivered_carrier_date: timestamp (nullable = true)
+ |-- order_delivered_customer_date: timestamp (nullable = true)
+ |-- order_estimated_delivery_date: timestamp (nullable = true)
+
+orders schema: None
+root
+ |-- order_id: string (nullable = true)
+ |-- order_item_id: integer (nullable = true)
+ |-- product_id: string (nullable = true)
+ |-- seller_id: string (nullable = true)
+ |-- shipping_limit_date: timestamp (nullable = true)
+ |-- price: double (nullable = true)
+ |-- freight_value: double (nullable = true)
+
+order_items schema: None
+root
+ |-- order_id: string (nullable = true)
+ |-- payment_sequential: integer (nullable = true)
+ |-- payment_type: string (nullable = true)
+ |-- payment_installments: integer (nullable = true)
+ |-- payment_value: double (nullable = true)
+
+order_payments schema: None
+root
+ |-- review_id: string (nullable = true)
+ |-- order_id: string (nullable = true)
+ |-- review_score: integer (nullable = true)
+ |-- review_comment_title: string (nullable = true)
+ |-- review_comment_message: string (nullable = true)
+ |-- review_creation_date: timestamp (nullable = true)
+ |-- review_answer_timestamp: timestamp (nullable = true)
+
+order_reviews schema: None
+root
+ |-- product_id: string (nullable = true)
+ |-- product_category_name: string (nullable = true)
+ |-- product_name_lenght: integer (nullable = true)
+ |-- product_description_lenght: integer (nullable = true)
+ |-- product_photos_qty: integer (nullable = true)
+ |-- product_weight_g: integer (nullable = true)
+ |-- product_length_cm: integer (nullable = true)
+ |-- product_height_cm: integer (nullable = true)
+ |-- product_width_cm: integer (nullable = true)
+
+products schema: None
+root
+ |-- seller_id: string (nullable = true)
+ |-- seller_zip_code_prefix: integer (nullable = true)
+ |-- seller_city: string (nullable = true)
+ |-- seller_state: string (nullable = true)
+
+sellers schema: None
+root
+ |-- product_category_name: string (nullable = true)
+ |-- product_category_name_english: string (nullable = true)
+
+product_category_name_translation schema: None
